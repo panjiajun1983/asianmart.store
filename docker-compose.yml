@@ -20,6 +20,7 @@ services:
     volumes:
       - ./html:/var/www/html
       - ./conf/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./conf/letsencrypt:/etc/letsencrypt
     ports:
       - "80:80"
     restart: always
